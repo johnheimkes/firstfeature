@@ -33,10 +33,10 @@
               ?>
               <fieldset>
                 <form action="form.php" method="post">
-                  <input type="text" name="name" value="Name" id="name" class="clearit" />
-                  <input type="text" name="email" value="Email" id="email" class="clearit" />
-                  <textarea name="message" id="message" class="clearit">Message</textarea>
-                  <input type="submit" name="submit" value="Send" id="submit" />
+                  <label for="name"></label><input type="text" name="name" value="Name" id="name" class="clearit" />
+                  <label for="email"></label><input type="text" name="email" value="Email" id="email" class="clearit" />
+                  <label for="message"></label><textarea name="message" id="message" class="clearit">Message</textarea>
+                  <label for="submit"></label><input type="submit" name="submit" value="Send" id="submit" />
                 </form>
               </fieldset>
             </div>
