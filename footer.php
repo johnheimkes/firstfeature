@@ -20,10 +20,10 @@
               <a href="#">email@email.com</a>
               <a href="#" target="_blank">@twitter</a>
             </div>
-            <div id="foot-contact">
-              <a href="#" target="_blank">Twitter</a>
-              <a href="#" target="_blank">Facebook</a>
-              <a href="#" target="_blank">Donate</a>
+            <div id="foot-form">
+              <a href="#" target="_blank" id="twitter">Twitter</a>
+              <a href="#" target="_blank" id="facebook">Facebook</a>
+              <a href="#" target="_blank" id="donate">Donate</a>
               <?php
                 if($_GET['success'] == true) {
                   echo "<p class='return_pass'>Thanks! We'll get back to you soon.</p>";
@@ -35,7 +35,7 @@
                 <form action="form.php" method="post">
                   <input type="text" name="name" value="Name" id="name" class="clearit" />
                   <input type="text" name="email" value="Email" id="email" class="clearit" />
-                  <textarea name="message" id="message" value="Message" class="clearit"></textarea>
+                  <textarea name="message" id="message" class="clearit">Message</textarea>
                   <input type="submit" name="submit" value="Send" id="submit" />
                 </form>
               </fieldset>

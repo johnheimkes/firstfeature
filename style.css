@@ -119,7 +119,7 @@ h1 a {
 =Footer
 -----------------------------------------------------------------------------*/
 .foot-block {
-	width: 165px;
+	width: 160px;
 	float: left;
 	padding: 40px 20px 20px;
 }
@@ -147,8 +147,66 @@ h1 a {
 	top: 50px;
 	margin: 0 auto;
 }
-
-
+#foot-form {
+	float: left;
+	width: 270px;
+	padding-top: 40px;
+	padding-left: 10px;
+}
+#foot-form a {
+	margin-right: 5px;
+}
+a#twitter, a#facebook {
+	display: block;
+	float: left;
+	width: 46px;
+	height: 46px;
+	text-indent: -9999px;
+}
+a#twitter { background: url(images/twitter.png) top left no-repeat; }
+a#twitter:hover { background: url(images/twitter.png) bottom left no-repeat; }
+a#facebook { background: url(images/facebook.png) top left no-repeat; }
+a#facebook:hover { background: url(images/facebook.png) bottom left no-repeat; }
+a#donate {
+	float: left;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 15px;
+	color: #fff;
+	margin: -6px 0 17px;
+	text-decoration: none;
+	display: block;
+	width: 162px;
+	height: 37px;
+	background: url(images/donate.png) top center no-repeat;
+}
+a#donate:hover { text-decoration: underline; }
+fieldset {
+	float: left;
+	margin-left: 4px;
+}
+input[type="text"], textarea {
+	width: 245px;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 18px;
+	padding: 5px;
+	border: none;
+	background: #191919;
+	-moz-box-shadow:0px 0px 5px #000000;
+	-webkit-box-shadow:0px 0px 2px #000000;
+	box-shadow:0px 0px 5px #000000;
+}
+textarea { height: 118px; }
+input[type="submit"] {
+	width: 75px;
+	height: 30px;
+	background: #191919;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	margin-left: 180px;
+}
 
 
 
