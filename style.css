@@ -22,12 +22,12 @@ body {
 	margin: 0 auto;
 }
 #mast-head {
-	height: 165px;
+	height: 135px;
 	background: url(images/header_bg.jpg) top left;
 	z-index: -50;
 }
 #mast-nav {
-	height: 42px;
+	height: 41px;
 	position: relative;
 	z-index: 100;
 	background: url(images/nav_bg.png) top left repeat-x;
@@ -59,7 +59,7 @@ h1 a {
 	background: url(images/logo.png);
 	text-indent: -9999px;
 	position: relative;
-	top: 55px;
+	top: 27px;
 }
 
 
@@ -76,41 +76,57 @@ h1 a {
 #nav ul li a {
 	display: block;
 	height: 22px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	text-decoration: none;
-	padding: 9px 27px 0;
+	padding: 9px 30px 0;
 	border-left: 1px solid #8b8b8b;
 }
 #nav ul li a:hover {
 	text-decoration: underline;
 }
 #nav ul li:last-child { border-right: 1px solid #8b8b8b; }
-#nav ul li:last-child a {
-	border-right: 1px solid #4b4c4c;
+#nav ul li:last-child a { border-right: 1px solid #4b4c4c; }
+
+#nav ul ul { display: none; }
+#nav ul li:hover ul {
+	display: block;
+	position: absolute;
+	background: #333;
 }
-
-
-
+#nav ul li ul li {
+	float: none;
+	border: none;
+}
+#nav ul li ul li a {
+	border: none;
+}
 
 /*----------------------------------------------------------------------------
 =Home
 -----------------------------------------------------------------------------*/
 #content {
-	padding-top: 75px;
-	padding-bottom: 50px;
+	padding-top: 35px;
+	padding-bottom: 40px;
 }
-.home.page h2.post-title a {
-	font-size: 30px;
+h2.post-title a {
+	font-size: 24px;
 	display: block;
 	margin-bottom: 25px;
 	color: #fff;
 	text-decoration: none;
 	font-weight: normal;
 }
+h2.post-title a:hover { text-decoration: underline; }
+h2.post-title {
+	font-size: 24px;
+	margin-bottom: 25px;
+	color: #fff;
+	font-weight: normal;
+}
 div.share {
 	display: block;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .twitter-share-button { float: left; }
 /*----------------------------------------------------------------------------
@@ -124,17 +140,29 @@ div.share {
 -----------------------------------------------------------------------------*/
 .foot-block {
 	width: 160px;
+	height: 355px;
 	float: left;
-	padding: 40px 20px 20px;
+	margin-top: 30px;
+	padding: 10px 24px 20px 20px;
+}
+#foot-block1 {
+	padding-left: 0;
+}
+#foot-block1, #foot-block2 {
+	border-right: 1px solid #6c6d6e;
+}
+#foot-block2, #foot-block3 {
+	border-left: 1px solid #c6c6c5;
 }
 .foot-block h3 {
 	font-weight: normal;
-	font-size: 21px;
+	font-size: 18px;
 	color: #fff;
 	text-shadow: 0px 1px 3px #000;
 	padding-bottom: 10px;
 }
 .foot-block a {
+	font-size: 14px;
 	display: block;
 	margin-top: 9px;
 	color: #fff;
@@ -155,7 +183,7 @@ div.share {
 	float: left;
 	width: 270px;
 	padding-top: 40px;
-	padding-left: 10px;
+	padding-left: 14px;
 }
 #foot-form a {
 	margin-right: 5px;
@@ -192,7 +220,7 @@ fieldset {
 input[type="text"], textarea {
 	width: 245px;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	margin-bottom: 18px;
 	padding: 5px;
 	border: none;
@@ -201,13 +229,13 @@ input[type="text"], textarea {
 	-webkit-box-shadow:0px 0px 2px #000000;
 	box-shadow:0px 0px 2px #000000;
 }
-textarea { height: 118px; }
+textarea { height: 118px; resize:none; }
 input[type="submit"] {
 	width: 75px;
 	height: 30px;
 	background: #191919;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	border: none;
 	margin-left: 180px;
 	-moz-box-shadow:0px 0px 2px #000000;

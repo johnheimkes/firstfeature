@@ -2,19 +2,19 @@
       <div id="mast-footer">
         <div id="footer">
           <div id="foot-contact">
-            <div class="foot-block">
+            <div class="foot-block" id="foot-block1">
               <h3>Mark Mazur</h3>
               <img src="http://placekitten.com/165/280" alt="kitty!!!!!!!!" />
               <a href="#">email@email.com</a>
               <a href="http://twitter.com/markdmazur" target="_blank">@markdmazur</a>
             </div>
-            <div class="foot-block">
+            <div class="foot-block" id="foot-block2">
               <h3>Trent Hilborn</h3>
               <img src="http://placekitten.com/165/280" alt="kitty!!!!!!!!" />
               <a href="#">email@email.com</a>
               <a href="#" target="_blank">@twitter</a>
             </div>
-            <div class="foot-block">
+            <div class="foot-block" id="foot-block3">
               <h3>Lorem Ipsum</h3>
               <img src="http://placekitten.com/165/280" alt="kitty!!!!!!!!" />
               <a href="#">email@email.com</a>
@@ -45,5 +45,6 @@
         </div>
       </div>  
     </div>
+    <?php wp_footer(); ?>
   </body>
 </html>

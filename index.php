@@ -3,7 +3,7 @@
   <? if (have_posts()) : ?>
     <? while (have_posts()) : the_post(); ?>
       <div id="post-<? the_id(); ?>" class="article">
-        <h2 class="post-title"><a href="<? the_permalink() ?>" title="Permalink to <? the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+        <h2 class="post-title"><?php the_title(); ?></h2>
         <div class="post_content">
           <? the_content(); ?>
         </div>
